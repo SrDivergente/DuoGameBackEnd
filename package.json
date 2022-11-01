@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:server": "nodemon src/server.ts"
+    "dev:server": "nodemon src/server.ts",
+    "db:migrate": "yarn prisma migrate dev --name init"
   },
   "dependencies": {
+    "@prisma/client": "^4.5.0",
     "express": "^4.18.2",
+    "prisma": "^4.5.0",
     "vitest": "^0.24.5"
   },
   "devDependencies": {
